@@ -2,9 +2,9 @@
 ## Features
 He says it all!
 
-- Yes,
-- No,
-- Hohoho,
+- Yes
+- No
+- Hohoho
 - Eugh
 - ~~Maybe~~ (removed in update 382013847)
 
