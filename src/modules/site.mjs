@@ -13,7 +13,6 @@ import * as language from "./language.mjs";
 export const g_translationTargetSelector = data.assembleCSV([
     "h1", "h2", "h3", "p", "title", "a"
 ]);
-console.log(g_translationTargetSelector);
 
 // Functions
 /**
@@ -23,13 +22,15 @@ console.log(g_translationTargetSelector);
  */
 export async function generate() {
     await language.loadTranslations();
+    /**
     const skipContent = dom.createElement(
         "a", document.body,
         {
             href: "#maincontent",
             id: "skip_content"
         }
-    );
+    ); fancy documentation LIES, this is not complete...
     skipContent.textContent = "site.title";
+    */
     language.assignTranslations(g_translationTargetSelector);
 }

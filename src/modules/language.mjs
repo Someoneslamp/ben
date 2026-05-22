@@ -33,14 +33,12 @@ export async function loadTranslations() {
     const htmlContainer = document.querySelector("html");
     if (htmlContainer == null) {
         throw new Error("Failed to find language code in DOM");
-        return;
     }
     /** @type {language_codes_t} */
     const supportedLanguageCodes = await data.loadJSON("assets/language_codes.json");
     const languageCode = htmlContainer.lang;
     if (!supportedLanguageCodes.includes(languageCode)) {
         throw new Error(`Language is unsupported: ${languageCode}`);
-        return;
     }
     g_languageCode = languageCode;
     g_translations = await data.loadJSON(`assets/language/${languageCode}.json`);
