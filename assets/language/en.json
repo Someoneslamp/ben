@@ -1,0 +1,11 @@
+{
+    "prompt.ask_ben": "Talking Ben",
+    "prompt.submit_ben": "Ask",
+
+    "response.yes": "Yes",
+    "response.no": "No",
+    "response.chuckle": "Hohoho!",
+    "response.silly": "Eugh!",
+    "response.pants_off": "Pants off okay!",
+    "response.seizure": "!!!"
+}
